@@ -7,7 +7,7 @@ const port = Number(process.env.PORT) || DEFAULT_PORT;
 const app = express();
 
 app.get("/health", (_request: Request, response: Response<HealthResponse>) => {
-  response.json({ status: "ok" });
+  response.json({ status: "ok", service: "matrix-stats-api-node" });
 });
 
 app.listen(port, (listenError) => {
