@@ -1,0 +1,24 @@
+{
+  "name": "matrix-stats-api-node",
+  "version": "1.0.0",
+  "description": "Statistics API for the matrices returned by the QR factorization (Express + TypeScript)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.19.2",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3"
+  }
+}
