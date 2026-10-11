@@ -2,7 +2,7 @@
 
 API en **Node.js + Express 5 + TypeScript** que calcula estadísticas (máximo, mínimo, promedio, suma y si alguna matriz es diagonal) sobre las matrices Q y R que le envía `matrix-qr-api-go`.
 
-> En construcción: por ahora solo expone `GET /health`.
+> En construcción: por ahora solo expone `GET /health` y su documentación en `/docs`.
 
 ## Requisitos
 
@@ -23,6 +23,12 @@ Versión compilada, igual a la de producción:
 npm run build    # compila TypeScript a dist/
 npm start        # node dist/server.js
 ```
+
+## Documentación (Swagger)
+
+Con el servidor levantado: http://localhost:3000/docs
+
+Cada endpoint se documenta con un bloque `/** @openapi ... */` sobre su ruta. [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc) arma la especificación al arrancar, así que no hace falta regenerar nada.
 
 ## Correr con Docker
 
